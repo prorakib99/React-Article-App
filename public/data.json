@@ -1,0 +1,58 @@
+[
+    {
+        "id": "6578ddb06dfd9c307717daf9",
+        "userImg": "https://i.postimg.cc/9fbS96jt/boy1.png",
+        "images": "https://i.postimg.cc/Vk8mWP23/2.png",
+        "name": "Christensen Gallegos",
+        "title": "How to get your first job as a self-taught programmer",
+        "postDate": "Mar 16 (2 Days ago)",
+        "readTime": 5,
+        "tags": [
+            "#amet",
+            "#mollit",
+            "#commodo"
+        ]
+    },
+    {
+        "id": "6578ddb04ff399c59a07e8c5",
+        "userImg": "https://i.postimg.cc/D09YFFqF/boy2.jpg",
+        "images": "https://i.postimg.cc/MKRzBp37/3.png",
+        "name": "Michael Strong",
+        "title": "The Ultimate Guide to Becoming a Self-Taught Programmer",
+        "postDate": "Mar 11 (7 Days ago)",
+        "readTime": 10,
+        "tags": [
+            "#aliquip",
+            "#cillum",
+            "#consequat"
+        ]
+    },
+    {
+        "id": "6578ddb0763ae1a8dbfab3ea",
+        "userImg": "https://i.postimg.cc/VvrH350D/girl1.jpg",
+        "images": "https://i.postimg.cc/v8CQDVh8/4.jpg",
+        "name": "Herman Lloyd",
+        "title": "How to Overcome Challenges as a Self-Taught Programmer",
+        "postDate": "Mar 20 (1 Days ago)",
+        "readTime": 15,
+        "tags": [
+            "#culpa",
+            "#enim",
+            "#nisi"
+        ]
+    },
+    {
+        "id": "6578ddb0e776fe2b830f33a3",
+        "userImg": "https://i.postimg.cc/vBSNq5T4/girl2.jpg",
+        "images": "https://i.postimg.cc/bYZyzTQF/1.jpg",
+        "name": "Ashley Fowler",
+        "title": "Self-Taught Programming: A Guide to Becoming a Professional",
+        "postDate": "Mar 7 (14 Days ago)",
+        "readTime": 12,
+        "tags": [
+            "#ad",
+            "#esse",
+            "#occaecat"
+        ]
+    }
+]
