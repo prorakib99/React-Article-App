@@ -4,12 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Post = (props) => {
-    const { id, name, userImg, images, title, tag, postDate, readTime } = props.post;
-    // const hashTag = tag.map(t => )
+    const { id, name, userImg, image, title, tags, postDate, readTime } = props.post;
     return (
-        <div className='lg:w-[845px]'>
+        <div className='w-full border-b border-neutral-900 border-opacity-10 pb-10'>
             <div>
-                <img className='w-full rounded-lg' src={images} alt="" />
+                <img className='w-full rounded-lg' src={image} alt="" />
             </div>
             <div className='flex items-center justify-between mt-9 mb-5'>
                 <div className='flex items-center gap-6'>
@@ -19,16 +18,21 @@ const Post = (props) => {
                         <p className="text-neutral-900 text-opacity-60 text-base font-semibold leading-relaxed">{postDate}</p>
                     </div>
                 </div>
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-3'>
                     <p className="text-right text-neutral-900 text-opacity-60 text-xl font-medium">{readTime} min read</p>
-                    <button>
-                        <FontAwesomeIcon icon={faBookmark} size="lg" />
+                    <button className='focus:text-green-600'>
+                        <FontAwesomeIcon icon={faBookmark} size="lg"/>
                     </button>
                 </div>
             </div>
             <div className='text-left'>
                 <h3 className="w-[737px] text-neutral-900 text-[40px] font-bold leading-[64px]">{title}</h3>
-                <p className="text-neutral-900 text-opacity-60 text-xl font-medium leading-loose">#beginners</p>
+                <div className='flex items-center gap-4 my-4'>
+                    {
+                        tags.map(tag => <p className="text-neutral-900 text-opacity-60 text-xl font-medium leading-loose">{tag}</p>)
+                    }
+                </div>
+                <button className="text-indigo-600 text-xl font-semibold underline hover:no-underline focus:text-indigo-900">Mark as read</button>
             </div>
         </div>
     );
