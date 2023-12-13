@@ -1,14 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Post = (props) => {
-    const { id, name, userImg, image, title, tags, postDate, readTime } = props.post;
+    const { name, userImg, image, title, tags, postDate, readTime } = props.post;
+    const addBookmark = props.addBookmark;
+    const markRead = props.markRead;
     return (
         <div className='w-full border-b border-neutral-900 border-opacity-10 pb-10'>
             <div>
-                <img className='w-full rounded-lg' src={image} alt="" />
+                <img className='w-full rounded-lg shadow-xl' src={image} alt="" />
             </div>
             <div className='flex items-center justify-between mt-9 mb-5'>
                 <div className='flex items-center gap-6'>
@@ -20,7 +21,7 @@ const Post = (props) => {
                 </div>
                 <div className='flex items-center gap-3'>
                     <p className="text-right text-neutral-900 text-opacity-60 text-xl font-medium">{readTime} min read</p>
-                    <button className='focus:text-green-600'>
+                    <button onClick={() => addBookmark(props.post)} className='focus:text-green-600'>
                         <FontAwesomeIcon icon={faBookmark} size="lg"/>
                     </button>
                 </div>
@@ -32,7 +33,7 @@ const Post = (props) => {
                         tags.map(tag => <p className="text-neutral-900 text-opacity-60 text-xl font-medium leading-loose">{tag}</p>)
                     }
                 </div>
-                <button className="text-indigo-600 text-xl font-semibold underline hover:no-underline focus:text-indigo-900">Mark as read</button>
+                <button onClick={() => markRead(props.post)} className="text-indigo-600 text-xl font-semibold underline hover:no-underline focus:text-indigo-900">Mark as read</button>
             </div>
         </div>
     );
