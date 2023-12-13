@@ -27,7 +27,7 @@ const Posts = () => {
     console.log(readTime);
     return (
         <div className='container mx-auto px-8'>
-            <div className='grid grid-cols-[2fr_1fr] gap-6 py-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 py-8'>
                 <div className='flex flex-col gap-10'>
                     {
                         posts.map(post => <Post key={post.id} addBookmark={addBookmark} markRead={markRead} post={post}></Post>)
